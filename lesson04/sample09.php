@@ -1,9 +1,13 @@
 <?php
 // 連想配列を作成する
 $employees = [
+  //$employees[0]
   ['id' => 1, 'name' => '佐藤', 'email' => 'user1@example.com', 'dept' => '営業'],
-  ['id' => 2, 'name' => '鈴木', 'email' => 'user2@example.com', 'dept' => '経理'],
+  //$employees[1]
+   ['id' => 2, 'name' => '鈴木', 'email' => 'user2@example.com', 'dept' => '経理'],
+  //$employees[2]
   ['id' => 3, 'name' => '高橋', 'email' => 'user3@example.com', 'dept' => '営業'],
+  //$employees[3]
   ['id' => 4, 'name' => '田中', 'email' => 'user4@example.com', 'dept' => '総務'],
   ['id' => 5, 'name' => '渡辺', 'email' => 'user5@example.com', 'dept' => '開発'],
   ['id' => 6, 'name' => '伊藤', 'email' => 'user6@example.com', 'dept' => '営業'],
