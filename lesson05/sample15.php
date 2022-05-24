@@ -1,5 +1,5 @@
 <?php
-require 'calc.php';
+require_once 'calc.php';
 
 $a = plus(10, 5);
 $b = minus(10, 5);
