@@ -3,7 +3,7 @@ function uranai($age, $sex){
 
     $amari = $age % 3;
 
-    if($sex = "woman"){
+    if($sex == "woman"){
         $amari++;
     }
 
@@ -22,7 +22,7 @@ function uranai($age, $sex){
 
 ///////////////////////////////////////
 
-$nemrei = 28;
+$nemrei = 30;
 $seibetu = "man";
 
 $watasi = uranai($nemrei, $seibetu);
