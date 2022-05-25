@@ -5,3 +5,4 @@ $c1 = new Car();
 
 $c1->accellerator();
 $c1->display();
+?>
