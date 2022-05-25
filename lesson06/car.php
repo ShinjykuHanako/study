@@ -5,6 +5,7 @@ class Car {
   public $speed;
   public $fuel;
 
+  //コンストラクタ
   function __construct() {
     $this->name = "ヤリス";
     $this->color = "赤";
