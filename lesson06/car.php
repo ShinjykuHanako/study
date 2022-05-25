@@ -5,6 +5,13 @@ class Car {
   public $speed;
   public $fuel;
 
+  function __construct() {
+    $this->name = "ヤリス";
+    $this->color = "赤";
+    $this->speed = 0;
+    $this->fuel = 100;
+  }
+
   function accellerator() {
     $this->speed += 5;
     $this->fuel -= 5;
