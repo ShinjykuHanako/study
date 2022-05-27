@@ -1,7 +1,7 @@
 <?php
 
-//共通
-class Animai{
+//共通 抽象クラス
+abstract class Animai{
     private $name;
     private $color;
     private $photo;
@@ -12,10 +12,9 @@ class Animai{
         $this->photo =  $p;
     }
 
-    function nakigoe(): string{
-        return "ニャーニャー";
-    }
-    
+    //抽象メソッド
+    abstract function nakigoe();
+   
     function shippo(): string{
         return "長い";
     }
@@ -46,7 +45,10 @@ class Cat extends Animai{
    function __construct($n , $c, $p) {
        parent::__construct($n , $c, $p);
     }
-     
+    function nakigoe(): string{
+        return "にゃーにゃー";
+    } 
+
 }
 ///犬
 class Dog extends Animai{
@@ -54,7 +56,9 @@ class Dog extends Animai{
    function __construct($n , $c, $p) {
        parent::__construct($n , $c, $p);
     }
-     
+    function nakigoe(): string{
+        return "わんわん";
+    }  
 }
 ///狐
 class Fox extends Animai{
@@ -62,7 +66,9 @@ class Fox extends Animai{
    function __construct($n , $c, $p) {
        parent::__construct($n , $c, $p);
     }
-     
+    function nakigoe(): string{
+        return "こんこん";
+    } 
 }
 
 
