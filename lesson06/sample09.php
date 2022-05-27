@@ -1,28 +1,12 @@
 <?php
-class Car {
-  private $name;
-  private static $count = 0;
-  public static $maker;
+require_once "car.php";
 
-  function __construct($name) {
-    $this->name = $name;
-    self::$count++;
-  }
-
-  function getName() {
-    return $this->name;
-  }
-
-  static function getCount() {
-    return self::$count;
-  }
-}
-
-$c1 = new Car('ヤリス');
 Car::$maker = 'トヨタ';
-echo '車の名前は' . $c1->getName() . ': 車の台数は' . Car::getCount() . '台です。', '<br />';
 
-$c2 = new Car('アクア');
-echo '車の名前は' . $c2->getName() . ': 車の台数は' . Car::getCount() . '台です。', '<br />';
+$c1 = new Car('ヤリス', '赤', 0, 100);
 
-echo Car::$maker;
+echo '<br>メーカー:' . Car::$maker . "<br>";
+echo '<br>車の名前は' . $c1->getName() . ': 車の台数は' . Car::getCount() . '台です。', '<br />';
+
+$c2 = new Car('アクア', '黒', 0, 100);
+echo '<br>車の名前は' . $c2->getName() . ': 車の台数は' . Car::getCount() . '台です。', '<br />';
